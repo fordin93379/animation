@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
-}
+img{
+width: 100vw;
+height: 100vh;}
+.MainContent{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -100;
+  animation-name: Main;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  z-index: -30;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Hider{
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 99vh;
+  border-bottom: 1vh solid black;
+  position: absolute;
+  z-index: 1;
+  animation-name: Hider;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  z-index: 30;
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App{
+  width: 0vw;
+  height: 0vh;
+  border-radius: 2vw;
+  margin-left:35vw;
+  margin-top:23vh;
+  position: absolute;
+  background-color: black;
+  animation-name: Enter;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  z-index: 50;
+}
+.Shop{
+  width: 0vw;
+  height: 0vh;
   color: white;
+  animation-name: FontEnter;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  font-size: 0%;
+  z-index: 100;
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes Hider{
+  50%{
+    top: 0;
+  left: 0;
+    width: 100vw;
+    height: 99vh;}
+  100%{top: -99vh;}
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes FontEnter{
+  0%{
+    width: 0vw;
+    height: 0vh;
+    margin-left:50%;
+    margin-top:50%;
+    
+    }
+   30%{
+    width: 40%;
+    height: 40%;
+    margin-left:30%;
+    margin-top:30%;
+    font-size: 400%;
+   }
+   50%{
+    width: 40%;
+    height: 40%;
+    margin-left:30%;
+    margin-top:30%;
+    font-size: 400%;
+    color: white;
+   }
+   60%{
+    width: 40%;
+    height: 40%;
+    margin-left:30%;
+    margin-top:30%;
+    font-size: 400%;
+    color: black;
+   }
+   80%{
+    width: 0vw;
+    height: 0vh;
+    margin-left:50%;
+    margin-top:0vh;
+    font-size: 0%;
+    color: black;
   }
-  to {
-    transform: rotate(360deg);
+   100%{
+    width: 0vw;
+    height: 0vh;
+    margin-left:50%;
+    margin-top:0vh;
+    font-size: 0%;
+    color: black;
   }
+}
+@keyframes Enter {
+  0%{
+  width: 0vw;
+  height: 0vh;
+  margin-left:50vw;
+  margin-top:30vh;
+  }
+ 30%{
+  width: 30vw;
+  height: 17vh;
+  margin-left:35vw;
+  margin-top:23vh;
+ }
+ 60%{
+  width: 30vw;
+  height: 17vh;
+  margin-left:35vw;
+  margin-top:23vh;
+ }
+ 100%{
+  width: 0vw;
+  height: 0vh;
+  margin-left:50vw;
+  margin-top:0vh;
+ }
 }

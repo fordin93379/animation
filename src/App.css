@@ -1,14 +1,13 @@
-img{
-width: 100vw;
-height: 100vh;}
+
 .MainContent{
   width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: -100;
   animation-name: Main;
-  animation-duration: 6s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
+  
   z-index: -30;
 
 }
@@ -21,7 +20,7 @@ height: 100vh;}
   position: absolute;
   z-index: 1;
   animation-name: Hider;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   z-index: 30;
   background-color: white;
@@ -35,16 +34,18 @@ height: 100vh;}
   position: absolute;
   background-color: black;
   animation-name: Enter;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   z-index: 50;
+  
 }
 .Shop{
   width: 0vw;
   height: 0vh;
   color: white;
   animation-name: FontEnter;
-  animation-duration: 3s;
+  text-align: center;
+  animation-duration: 1.5s;
   animation-fill-mode: forwards;
   font-size: 0%;
   z-index: 100;
@@ -55,7 +56,7 @@ height: 100vh;}
   left: 0;
     width: 100vw;
     height: 99vh;}
-  100%{top: -99vh;}
+  100%{top: -100vh;}
 }
 @keyframes FontEnter{
   0%{
@@ -69,14 +70,14 @@ height: 100vh;}
     width: 40%;
     height: 40%;
     margin-left:30%;
-    margin-top:30%;
+    margin-top:20%;
     font-size: 400%;
    }
    50%{
     width: 40%;
     height: 40%;
     margin-left:30%;
-    margin-top:30%;
+    margin-top:20%;
     font-size: 400%;
     color: white;
    }

@@ -4,10 +4,10 @@
     height: 12%;
 }
 .HeadSign{
-    width: 20%;
-    height: 50%;
+    width: 20vw;
+    height: 7vh;
     border-top: 3% solid black;
-    border-radius: 10%;
+    border-radius: 10vh;
     text-align: center;
     color: white;
     background-color: black;
